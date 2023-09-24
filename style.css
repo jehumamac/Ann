@@ -1,0 +1,131 @@
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #DCE35B;
+  background: -webkit-linear-gradient(to right, #45B649, #DCE35B);
+  background: linear-gradient(to right, #45B649, #DCE35B);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  background: #12192c;
+  border-radius: 30px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+  color: #DCE35B;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+	
+  }
+  .card img.birthday {
+    width: auto; /* Change this to 'auto' to maintain the image's original aspect ratio */
+    max-height: 50vh; /* Adjust the max height as needed */
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+	overflow-y: scroll;
+  }
+  .card img.birthday {
+    width: auto; /* Change this to 'auto' to maintain the image's original aspect ratio */
+    max-height: 30vh; /* Adjust the max height as needed */
+    border-radius: 30px;
+  }
+}
+
+img.birthday {
+  max-height: 40vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.text {
+  padding: 3em;
+}
+
+.text h1 {
+  font-family: cursive;
+  font-size: 10px;
+}
+
+.space {
+  height: 50px;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.credit {
+  margin-top: 10px;
+  text-align: center;
+}
+/* Existing CSS styles above */
+
+.card {
+  /* Existing styles */
+  
+  /* Add a gradient background for the card */
+  background: linear-gradient(135deg, #12192c, #1c2a4a);
+  color: #DCE35B;
+}
+
+.card h1 {
+  /* Style the birthday heading */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.card p {
+  /* Style the birthday message */
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.card p:last-child {
+  /* Style the sender's name */
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.card img.birthday {
+  /* Add a border to the image */
+  border: 4px solid #DCE35B;
+}
+
+/* Add a hover effect for the card */
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Style the link in the credit section */
+.credit a:hover {
+  text-decoration: underline;
+}
+
+/* Add some padding to the credit section */
+.credit {
+  padding-top: 10px;
+}
